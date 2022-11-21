@@ -1,3 +1,9 @@
+/*
+ * Name: Megh Patel and Nirmal Patel
+ * Title: Java lab 1
+ * Student ID: 100802838 and 100830820
+ */
+
 // reqired imports
 import javax.lang.model.type.NullType;
 import java.time.LocalDate;
