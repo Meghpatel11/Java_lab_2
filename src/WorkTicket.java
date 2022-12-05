@@ -1,11 +1,10 @@
 /*
  * Name: Megh Patel and Nirmal Patel
- * Title: Java lab 1
+ * Title: Java lab 2
  * Student ID: 100802838 and 100830820
  */
 
 // reqired imports
-import javax.lang.model.type.NullType;
 import java.time.LocalDate;
 
 public class WorkTicket
@@ -104,13 +103,14 @@ public class WorkTicket
         return false;
     }
 
-    public void ShowWorkTicket()
+    public String ShowWorkTicket()
     {
         System.out.println();
         System.out.println("Ticket Number : " + number);
         System.out.println("Client ID : " + client_id);
         System.out.println("Ticket Date : " + date);
         System.out.println("Description of issue: " + description);
+        return null;
     }
 
 

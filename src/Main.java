@@ -1,6 +1,6 @@
 /*
  * Name: Megh Patel and Nirmal Patel
- * Title: Java lab 1
+ * Title: Java lab 2
  * Student ID: 100802838 and 100830820
  */
 
@@ -10,20 +10,18 @@ public class Main
 {
     public static void main(String[] args)
     {
-        // ticket with parameters
-        WorkTicket my_ticket1 = new WorkTicket(10011, "Client101", "Description of ticket 1", LocalDate.of(2022, 5, 1));
-        WorkTicket my_ticket2 = new WorkTicket(3232,"User102","first ticket for trip",LocalDate.of(2000,3,4));
+        ExtendedWorkTicket ewt = new ExtendedWorkTicket();
+        System.out.println(ewt.toString());
 
-        // ticket without parameters
-        WorkTicket my_ticket3 = new WorkTicket();
+        ewt = new ExtendedWorkTicket(15334, "Client 1", LocalDate.of(2021, 2, 1), "Issue of description goes here");
+        System.out.println(ewt.toString());
 
-        // store tickets into array
-        WorkTicket[] tickets = new WorkTicket[]{my_ticket1, my_ticket2, my_ticket3};
+        ExtendedWorkTicket ewtClone = new ExtendedWorkTicket(ewt);
+        System.out.println(ewtClone.toString());
+        ewtClone.SetWorkTicket(1231, "Client 2", LocalDate.of(2011, 10, 5), "Example of any issues ");
+        System.out.println(ewtClone.toString());
 
-        // display each ticket data
-        for(WorkTicket ticket : tickets) {
-            ticket.ShowWorkTicket();
-        }
+
 
     }
 }
