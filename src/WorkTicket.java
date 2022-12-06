@@ -1,6 +1,6 @@
 /*
  * Name: Megh Patel and Nirmal Patel
- * Title: Java lab 2
+ * Title: Java lab 3
  * Student ID: 100802838 and 100830820
  */
 
